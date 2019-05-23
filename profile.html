@@ -1,7 +1,9 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <title>Profile | SkillConnect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='css/profile.css' />
 </head>
@@ -45,7 +47,12 @@
                 </div>
             </div>
         </div>
-        <div class='bottom'>
+        <div class='nav-button'>
+            <a href="javascript:void(0);" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id='nav' class='bottom'>
             <div class='sk-nav gray'>
                 Home
             </div>
@@ -68,11 +75,11 @@
             <div class='sk-nav gray last'>
                 Contact Us
             </div>
-            <button class='sk-post-job-btn blue-btn'>
-                <img src="img/add-sign.svg" class="add-sign">
-                Post A Job
-            </button>
         </div>
+        <button class='sk-post-job-btn blue-btn'>
+            <img src="img/add-sign.svg" class="add-sign">
+            Post A Job
+        </button>
     </div>
 
     <div class='main-content'>
@@ -82,7 +89,7 @@
         </div>
         <div class='profile'>
             <div class='profile-image'>
-                <img src='img/ng-racheal-asonibare.jpg' class='user-img'/>
+                <img src='img/ng-racheal-asonibare.jpg' class='user-img' />
             </div>
             <div class='profile-info'>
                 <div class='profile-overview'>
@@ -100,7 +107,16 @@
             </div>
         </div>
     </div>
-
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("nav");
+            if (x.className === "bottom") {
+                x.className += " hide";
+            } else {
+                x.className = "bottom";
+            }
+        }
+    </script>
 
 </body>
 

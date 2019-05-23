@@ -3,6 +3,10 @@ body {
     /* min-width: 400px; */
 }
 
+.hide {
+    display: none !important;
+}
+
 .flex-center-vertically {
     display: flex;
     flex-direction: column;
@@ -10,11 +14,8 @@ body {
 }
 
 .blue-btn {
-    width: 182.1px;
-    height: 66px;
-    border-radius: 5px;
     background-color: #236df8;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.2;
     text-align: left;
@@ -35,19 +36,20 @@ body {
 }
 
 .main-header {
-    padding: 10px 0px 30px 30px;
+    padding: 10px 0px 30px 0px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
     background-color: #ffffff;
     position: relative;
 }
 
 .main-header .top {
-    height: 81px;
     display: flex;
+    flex-direction: column;
 }
 
 .left-header {
     width: fit-content;
+    margin: auto;
 }
 
 .skill-logo {
@@ -57,12 +59,11 @@ body {
 }
 
 .right-header {
-    width: fit-content;
     padding-top: 31px;
     padding-bottom: 30px;
-    margin-left: 50px;
-    min-width: 500px;
     display: flex;
+    width: fit-content;
+    margin: auto;
 }
 
 .right-header .last {
@@ -75,7 +76,7 @@ body {
     line-height: 1.18;
     letter-spacing: normal;
     text-align: left;
-    margin-right: 40px;
+    margin-right: 10px;
     display: flex;
 }
 
@@ -114,10 +115,14 @@ body {
     height: 20px;
 }
 
+.nav-button a {
+    margin-left: 20px;
+}
+
 .main-header .bottom {
-    display: flex;
-    margin-top: 40px;
-    padding-left: 10px;
+    /* display: flex; */
+    margin-top: 20px;
+    padding-left: 20px;
 }
 
 .sk-nav {
@@ -134,10 +139,13 @@ body {
 }
 
 .sk-post-job-btn {
-    margin-left: 40px;
-    margin-top: -30px;
-    padding-left: 30px;
-    min-width: 163px;
+    padding: 0px 30px;
+    width: fit-content;
+    border-radius: 5px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 160px;
 }
 
 .add-sign {
@@ -198,9 +206,9 @@ body {
 
 .name {
     height: fit-content;
-    font-size: 43px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 1.7;
+    line-height: 1.2;
     text-align: left;
     color: #0f0f0f;
 }
@@ -208,7 +216,7 @@ body {
 .role {
     height: 23px;
     font-family: Roboto;
-    font-size: 17px;
+    font-size: 12px;
     line-height: 1.21;
     text-align: left;
     color: #2f2f2f;
@@ -222,12 +230,12 @@ body {
 
 .sk-popularity div {
     height: 39px;
-    font-size: 33px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 1.18;
+    line-height: 1.2;
     text-align: center;
     color: #000000;
-    padding: 0px 45px;
+    padding: 0px 25px;
     border-right: 2.1px solid #9f9f9f;
   
 }
@@ -272,6 +280,10 @@ body {
 @media only screen and (min-width: 768px) {
     .right-header {
         margin-left: 80px;
+    }
+
+    .profile-overview {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
