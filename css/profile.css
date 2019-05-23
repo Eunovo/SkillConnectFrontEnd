@@ -311,6 +311,24 @@ body {
     padding: 0px 2px;
 }
 
+.tabs {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tab {
+    font-size: 15px;
+    padding: 10px;
+    color: #898989;
+    border-bottom: 5px solid #f4f5fc;
+}
+
+.tabs .active {
+    color: #2055aa;
+    border-bottom-color: #2055aa;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
 
