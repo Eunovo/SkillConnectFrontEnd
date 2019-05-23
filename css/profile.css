@@ -63,6 +63,7 @@ body {
     padding-bottom: 30px;
     margin-left: 50px;
     min-width: 500px;
+    display: flex;
 }
 
 .right-header .last {
@@ -75,17 +76,21 @@ body {
     line-height: 1.18;
     letter-spacing: normal;
     text-align: left;
-    display: inline;
     margin-right: 40px;
-}
-
-.sk-menu-item .icon {
-    height: 20px;
-    padding-top: 2px;
+    display: flex;
 }
 
 .sk-menu-item .menu-text {
     display: none;
+}
+
+.sk-menu-item div {
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.sk-menu-item .messages {
+    margin-top: 0px;
 }
 
 .comment-black-oval-bubble-shape {
@@ -274,7 +279,7 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .sk-menu-item .menu-text {
-        display: inline;
+        display: block;
     }
 
     .sk-nav {
