@@ -1,0 +1,47 @@
+body {
+    font-family: Roboto;
+}
+
+.blue-btn {
+    width: 182.1px;
+    height: 66px;
+    border-radius: 5px;
+    background-color: #236df8;
+    width: 96px;
+    height: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.main-header {
+    width: 1920px;
+    height: 4904px;
+    background-color: #f7f9fc;
+}
+
+.skill-logo {
+    width: 267px;
+    height: 81px;
+    object-fit: contain;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
