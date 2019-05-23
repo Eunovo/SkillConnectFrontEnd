@@ -31,6 +31,10 @@ body {
     color: #f82323;
 }
 
+.red2 {
+    color: #ec3a33;
+}
+
 .blue1 {
     color: #236df8;
 }
@@ -285,6 +289,26 @@ body {
 
 .sk-popularity .likes::after {
     content: 'Likes';
+}
+
+.metadata {
+    display: flex;
+    font-size: 12px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.metadata div {
+    display: flex;
+}
+
+.metadata-label {
+    color: #7b7b7b;
+}
+
+.metadata-label::after {
+    content: "-";
+    padding: 0px 2px;
 }
 
 /* Extra small devices (phones, 600px and down) */
