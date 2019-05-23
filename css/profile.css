@@ -35,8 +35,7 @@ body {
 }
 
 .main-header {
-    padding: 59px 0px 30px 30px;
-    /* height: 258px; */
+    padding: 10px 0px 30px 30px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
     background-color: #ffffff;
     position: relative;
@@ -72,7 +71,7 @@ body {
 
 .sk-menu-item {
     height: 20px;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.18;
     letter-spacing: normal;
     text-align: left;
@@ -124,7 +123,7 @@ body {
 .sk-nav {
     margin-right: 20px;
     height: 24px;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.2;
     text-align: left;
