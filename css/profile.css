@@ -15,7 +15,7 @@ body {
 
 .blue-btn {
     background-color: #236df8;
-    font-size: 15px;
+    font-size: 10pt;
     font-weight: 500;
     line-height: 1.2;
     text-align: left;
@@ -139,13 +139,13 @@ body {
 }
 
 .sk-post-job-btn {
-    padding: 0px 30px;
+    padding: 0px 15px;
     width: fit-content;
     border-radius: 5px;
-    height: 40px;
+    height: 30px;
     position: absolute;
     right: 10px;
-    top: 130px;
+    top: 135px;
 }
 
 .add-sign {
@@ -167,6 +167,24 @@ body {
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+.follow-btn {
+    width: 124px;
+    height: 24px;
+    border-radius: 50px;
+    border: solid 1px #11578b;
+    background-color: #179cff;
+    font-family: Quicksand;
+    font-size: 10pt;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ffffff;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    text-align: center;
+    padding-top: 10px
 }
 
 .profile {
@@ -192,9 +210,7 @@ body {
     border-radius: 100%;
 }
 
-.profile-info {
-    
-}
+.profile-info {}
 
 .profile-overview {
     display: grid;
