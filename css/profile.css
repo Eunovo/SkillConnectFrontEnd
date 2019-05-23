@@ -64,7 +64,7 @@ body {
     margin-left: 50px;
 }
 
-.right-header:last-child {
+.right-header .last {
     margin-right: 0px;
 }
 
