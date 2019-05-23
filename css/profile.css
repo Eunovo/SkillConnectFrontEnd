@@ -54,7 +54,7 @@ body {
 
 .skill-logo {
     width: 200px;
-    height: 81px;
+    height: 50px;
     object-fit: contain;
 }
 
@@ -145,7 +145,7 @@ body {
     height: 40px;
     position: absolute;
     right: 10px;
-    top: 160px;
+    top: 130px;
 }
 
 .add-sign {
@@ -165,24 +165,25 @@ body {
 
 .cover-image {
     width: 100%;
-    object-fit: contain;
+    height: 200px;
+    object-fit: cover;
 }
 
 .profile {
     z-index: 0;
-    padding: 0px 60px;
+    padding: 0px 10px 10px 10px;
     background-color: white;
 }
 
 .profile-image {
-    margin-top: -50px;
+    top: 150px;
     padding: 10px;
     border-radius: 100%;
     z-index: 1;
     background-color: white;
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 .user-img {
@@ -192,7 +193,7 @@ body {
 }
 
 .profile-info {
-    margin-left: 250px;
+    
 }
 
 .profile-overview {
@@ -201,7 +202,8 @@ body {
 }
 
 .sk-name-role {
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-left: 120px;
 }
 
 .name {
@@ -225,25 +227,25 @@ body {
 
 .sk-popularity {
     display: flex;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 .sk-popularity div {
     height: 39px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
     color: #000000;
     padding: 0px 25px;
     border-right: 2.1px solid #9f9f9f;
-  
 }
 
 .sk-popularity div::after {
     display: block;
     height: 21px;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.17;
     text-align: center;
     color: #9f9f9f;
