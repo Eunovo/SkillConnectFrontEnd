@@ -1,5 +1,12 @@
 body {
     font-family: Roboto;
+    /* min-width: 400px; */
+}
+
+.flex-center-vertically {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .blue-btn {
@@ -7,41 +14,277 @@ body {
     height: 66px;
     border-radius: 5px;
     background-color: #236df8;
-    width: 96px;
-    height: 24px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.2;
-    letter-spacing: normal;
     text-align: left;
     color: #ffffff;
+    border: none;
+}
+
+.gray {
+    color: #6f7484;
+}
+
+.red1 {
+    color: #f82323;
+}
+
+.blue1 {
+    color: #236df8;
 }
 
 .main-header {
-    width: 1920px;
-    height: 4904px;
-    background-color: #f7f9fc;
+    padding: 59px 0px 30px 0px;
+    /* height: 258px; */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
+    background-color: #ffffff;
+    position: relative;
+}
+
+.main-header .top {
+    height: 81px;
+    display: flex;
+}
+
+.left-header {
+    width: fit-content;
 }
 
 .skill-logo {
-    width: 267px;
+    width: 200px;
     height: 81px;
     object-fit: contain;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {} 
+.right-header {
+    width: fit-content;
+    padding-top: 31px;
+    padding-bottom: 30px;
+    margin-left: 50px;
+}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {} 
+.right-header:last-child {
+    margin-right: 0px;
+}
+
+.sk-menu-item {
+    height: 20px;
+    font-size: 15px;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: left;
+    display: inline;
+    margin-right: 40px;
+}
+
+.sk-menu-item .icon {
+    height: 20px;
+    padding-top: 2px;
+}
+
+.sk-menu-item .menu-text {
+    display: none;
+}
+
+.comment-black-oval-bubble-shape {
+    width: 18.9px;
+    height: 16.2px;
+    object-fit: contain;
+}
+
+.wallet {
+    width: 18px;
+    height: 18.2px;
+    object-fit: contain;
+}
+
+.notification-new {
+    width: 16.9px;
+    height: 18.2px;
+    object-fit: contain;
+}
+
+.usa {
+    height: 20px;
+}
+
+.main-header .bottom {
+    display: flex;
+    margin-top: 40px;
+    padding-left: 10px;
+}
+
+.sk-nav {
+    margin-right: 40px;
+    height: 24px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+}
+
+
+.sk-post-job-btn {
+    margin-left: 40px;
+    margin-top: -30px;
+    padding-left: 30px;
+}
+
+.add-sign {
+    width: 13.4px;
+    height: 13.4px;
+    object-fit: contain;
+}
+
+.main-content {
+    background-color: #f7f9fc;
+    position: relative;
+}
+
+.cover {
+    z-index: -1;
+}
+
+.cover-image {
+    width: 100%;
+    object-fit: contain;
+}
+
+.profile {
+    z-index: 0;
+    padding: 0px 60px;
+    background-color: white;
+}
+
+.profile-image {
+    margin-top: -50px;
+    padding: 10px;
+    border-radius: 100%;
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.user-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: contain;
+}
+
+.profile-info {
+    margin-left: 250px;
+}
+
+.profile-overview {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sk-name-role {
+    margin-top: 50px;
+}
+
+.name {
+    height: fit-content;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.7;
+    text-align: left;
+    color: #0f0f0f;
+}
+
+.role {
+    height: 23px;
+    font-family: Roboto;
+    font-size: 17px;
+    line-height: 1.21;
+    text-align: left;
+    color: #2f2f2f;
+    margin-top: 10px;
+}
+
+.sk-popularity {
+    display: flex;
+    margin-top: 50px;
+}
+
+.sk-popularity div {
+    height: 39px;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 1.18;
+    text-align: center;
+    color: #000000;
+    padding: 0px 45px;
+    border-right: 2.1px solid #9f9f9f;
+  
+}
+
+.sk-popularity div::after {
+    display: block;
+    height: 21px;
+    font-size: 15px;
+    line-height: 1.17;
+    text-align: center;
+    color: #9f9f9f;
+}
+
+.sk-popularity .followers {
+    padding-left: 0px;
+}
+
+.sk-popularity .likes {
+    border-right: none;
+}
+
+.sk-popularity .followers::after {
+    content: 'Followers';
+}
+
+.sk-popularity .following::after {
+    content: 'Following';
+}
+
+.sk-popularity .likes::after {
+    content: 'Likes';
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (min-width: 312px) {}
+
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {} 
+@media only screen and (min-width: 768px) {
+    .right-header {
+        margin-left: 80px;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {} 
+@media only screen and (min-width: 992px) {
+    .sk-menu-item .menu-text {
+        display: inline;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .main-header {
+        padding-left: 100px;
+    }
+
+    .skill-logo {
+        width: 267px;
+    }
+
+    .right-header {
+        margin-left: 214px;
+    }
+}

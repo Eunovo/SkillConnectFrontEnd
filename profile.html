@@ -2,16 +2,107 @@
 
 <head>
     <title>Profile | SkillConnect</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='css/profile.css' />
 </head>
 
 <body>
-    <div className='main-header'>
-        <div className='left-header'>
-            <img src="img/skill-logo.png" srcset="img/skill-logo@2x.png 2x,
-                            img/skill-logo@3x.png 3x" class="skill-logo">
+    <div class='main-header'>
+        <div class='top'>
+            <div class='left-header'>
+                <img src="img/skill-logo.png" srcset="img/skill-logo@2x.png 2x,
+                                        img/skill-logo@3x.png 3x" class="skill-logo">
+            </div>
+            <div class='right-header'>
+                <div class='sk-menu-item red1'>
+                    <span class="icon">
+                        <img src="img/comment-black-oval-bubble-shape.svg" class="comment-black-oval-bubble-shape">
+                    </span>
+                    132
+                    <span class='menu-text'>Messages</span>
+                </div>
+                <div class='sk-menu-item blue1'>
+                    <span class="icon">
+                        <img src="img/wallet.svg" class="wallet">
+                    </span>
+                    <span class='menu-text'>50,000 NGN</span>
+                </div>
+                <div class='sk-menu-item gray'>
+                    <span class="icon">
+                        <img src="img/notification-new.svg" class="notification-new">
+                    </span>
+                    <span class='menu-text'>Notification</span>
+                </div>
+                <div class='sk-menu-item gray'>
+                    Login
+                </div>
+                <div class='sk-menu-item gray'>
+                    Registration
+                </div>
+                <div class='sk-menu-item gray'>
+                    <span class="icon">
+                        <img src="img/usa.png" class="usa">
+                    </span>
+                    English
+                </div>
+            </div>
+        </div>
+        <div class='bottom'>
+            <div class='sk-nav gray'>
+                Home
+            </div>
+            <div class='sk-nav gray'>
+                Jobs
+                <span class='icon'></span>
+            </div>
+            <div class='sk-nav gray'>
+                Candidates
+            </div>
+            <div class='sk-nav gray'>
+                Employers
+            </div>
+            <div class='sk-nav gray'>
+                Dashboard
+            </div>
+            <div class='sk-nav gray'>
+                Pages
+            </div>
+            <div class='sk-nav gray'>
+                Contact Us
+            </div>
+            <button class='sk-post-job-btn blue-btn'>
+                <img src="img/add-sign.svg" class="add-sign">
+                Post A Job
+            </button>
         </div>
     </div>
+
+    <div class='main-content'>
+        <div class='cover'>
+            <img src="img/cover-image.png" srcset="img/cover-image@2x.png 2x,
+             img/cover-image@3x.png 3x" class="cover-image">
+        </div>
+        <div class='profile'>
+            <div class='profile-image'>
+                <img src='img/ng-racheal-asonibare.jpg' class='user-img'/>
+            </div>
+            <div class='profile-info'>
+                <div class='profile-overview'>
+                    <div class='sk-name-role'>
+                        <div class='name'>Bola Adesola</div>
+                        <div class='role'>Managing Director/CEO</div>
+                    </div>
+                    <div class='sk-popularity'>
+                        <div class='followers'>230K</div>
+                        <div class='following'>112</div>
+                        <div class='likes'>9.3k</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
