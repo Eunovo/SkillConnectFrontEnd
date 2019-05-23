@@ -312,22 +312,71 @@ body {
 }
 
 .tabs {
-    margin-top: 10px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .tab {
-    font-size: 15px;
+    font-size: 13px;
     padding: 10px;
     color: #898989;
     border-bottom: 5px solid #f4f5fc;
+    text-align: center;
 }
 
 .tabs .active {
     color: #2055aa;
     border-bottom-color: #2055aa;
 }
+
+.body {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.body .descr .title {
+    font-size: 21px;
+    font-weight: bold;
+    color: #0f0f0f;
+}
+
+.body .descr p {
+    font-size: 13px;
+    color: #363636;
+}
+
+.sk-attrs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.sk-attr {
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    color: #173e7e;
+    border-radius: 200px;
+    border: solid 2px #f2f2f2;
+    background-color: #f9f9f9;
+    width: fit-content;
+    padding: 10px 30px;
+}
+
+.sk-attr-value {
+    margin-left: 4px;
+    font-weight: normal;
+    color: #6a6a6a;
+}
+
+.sk-attr-value::before {
+    content: "-";
+    margin-right: 4px;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
