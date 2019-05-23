@@ -426,6 +426,51 @@ body {
     font-size: 14px;
 }
 
+.skills {
+    margin-bottom: 20px;
+}
+
+.skills .title {
+    margin: 20px 0px;
+}
+
+.skill-box {
+    position: relative;
+    margin-top: 10px;
+}
+
+.skill-box div:first-child {
+    font-size: 12;
+    color: #1c1919;
+}
+
+.skill-value {
+    position: absolute;
+    left: 0px;
+    background-color: #e94782;
+    height: 5px;
+    width: 100%;
+    transform-origin: left;
+}
+
+.skill-value div {
+    position: absolute;
+    top: -15px;
+    right: 0px;
+}
+
+.skill-meter {
+    background-color: #e5e5e5;
+    border-radius: 400px;
+    height: 5px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.sk-tp-cmp .title {
+    margin: 20px 0px;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
