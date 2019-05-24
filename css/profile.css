@@ -678,6 +678,10 @@ body {
         font-size: 15px;
     }
 
+    .body .descr p {
+        font-size: 15px;
+    }
+
     .sk-attrs {
         grid-template-columns: repeat(2, 1fr);
     }
