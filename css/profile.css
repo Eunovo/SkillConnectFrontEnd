@@ -242,7 +242,8 @@ body {
 .sk-popularity {
     display: flex;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sk-popularity div {
