@@ -519,12 +519,14 @@ body {
 
 .footer {
     padding: 10px;
+    background-color: white;
 }
 
-.footer div:first-child {
+.top-footer {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #f7f9fc;
+    border-bottom: 2px solid #f7f9fc;
+    padding-bottom: 20px;
 }
 
 .footer .skill-logo {
@@ -546,8 +548,53 @@ body {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    margin-top: 20px;
+}
+
+.footer-col {
+    color: #6f7484;
+    font-size: 14px;
+}
+
+.footer-col .title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #232630;
+}
+
+.footer-col div {
+    margin-bottom: 10px;
+}
+
+.news-letter {
+    grid-column: 1 / 3
+}
+
+.news-letter div:last-child {
+    margin-top: 25px;
+    display: flex;
+}
+
+.news-letter input {
+    border: none;
+    padding: 2px 5px;
+    height: 50px;
+    margin-top: 20px;
+    border-bottom: 2px solid #236df8;
+}
+
+.news-letter .blue-btn {
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.news-letter .blue-btn img {
+    margin-left: 5px;
 }
 
 /* Extra small devices (phones, 600px and down) */
