@@ -662,7 +662,7 @@ body {
         transform: scale(1.2, 1.2);
         /* width: fit-content; */
         margin-top: 30px;
-        margin-left: 30px;
+        margin-left: 30%;
     }
 
     .metadata .met {
