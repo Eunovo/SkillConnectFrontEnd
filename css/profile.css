@@ -405,7 +405,7 @@ body {
     font-size: 14px;
 }
 
-.sk-school .type-year div:first-child{
+.sk-school .type-year div:first-child {
     color: #074574;
     margin-right: 10px;
 }
@@ -471,6 +471,51 @@ body {
     margin: 20px 0px;
 }
 
+.sk-tp-cmp .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottom-content {
+    background-color: #246df8;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.bottom-content .blue-btn {
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: solid 2px #6a92fa;
+    background-color: #417af8;
+}
+
+.sk-dream {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.sk-dream div:first-child {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sk-dream div:last-child {
+    margin-top: 10px;
+}
+
+.sk-choice {
+    display: flex;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.sk-choice .or {
+    margin: 0px 20px;
+    font-size: 10px;
+    padding: 15px 0px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
