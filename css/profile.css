@@ -479,6 +479,7 @@ body {
 }
 
 .bottom-content .blue-btn {
+    min-width: 90px;
     padding: 15px 10px;
     border-radius: 5px;
     border: solid 2px #6a92fa;
@@ -593,7 +594,7 @@ body {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .hide {
         display: none !important;
     }
@@ -615,15 +616,6 @@ body {
 
     .main-header .skill-logo {
         width: 260px;
-    }
-
-    .nav-button {
-        display: none;
-    }
-
-    .main-header .bottom {
-        display: flex;
-        padding-left: 40px;
     }
 
     .sk-post-job-btn {
@@ -708,6 +700,15 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .nav-button {
+        display: none;
+    }
+
+    .main-header .bottom {
+        display: flex;
+        padding-left: 40px;
+    }
+
     .right-header {
         margin-left: 40px;
     }
