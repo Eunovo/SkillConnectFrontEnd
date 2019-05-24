@@ -3,10 +3,6 @@ body {
     /* min-width: 400px; */
 }
 
-.hide {
-    display: none !important;
-}
-
 .flex-center-vertically {
     display: flex;
     flex-direction: column;
@@ -124,7 +120,6 @@ body {
 }
 
 .main-header .bottom {
-    /* display: flex; */
     margin-top: 20px;
     padding-left: 20px;
 }
@@ -195,6 +190,7 @@ body {
     z-index: 0;
     padding: 0px 10px 10px 10px;
     background-color: white;
+    box-shadow: 0 0 40px 0 rgba(3, 38, 103, 0.1);
 }
 
 .profile-image {
@@ -213,8 +209,6 @@ body {
     height: 100%;
     border-radius: 100%;
 }
-
-.profile-info {}
 
 .profile-overview {
     display: grid;
@@ -326,11 +320,11 @@ body {
 
 .tabs .active {
     color: #2055aa;
-    border-bottom: 2px solid #2055aa;
+    border-bottom: 5px solid #2055aa;
 }
 
 .body {
-    margin-top: 20px;
+    margin-top: -5px;
 }
 
 .body .title {
@@ -480,7 +474,7 @@ body {
     background-color: #246df8;
     color: #ffffff;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 10vh;
 }
 
 .bottom-content .blue-btn {
@@ -598,20 +592,119 @@ body {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .hide {
+        display: none !important;
+    }
+}
 
-@media only screen and (min-width: 312px) {}
+@media only screen and (min-width: 600px) {
+    .main-header .top {
+        flex-direction: row;
+    }
 
-@media only screen and (min-width: 600px) {}
+    .sk-menu-item {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+    .left-header {
+        margin-left: 20px;
+    }
+
+    .main-header .skill-logo {
+        width: 260px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .main-header .bottom {
+        display: flex;
+        padding-left: 40px;
+    }
+
+    .sk-post-job-btn {
+        top: 100px;
+        right: 45px;
+    }
+
+    .profile {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 5vw 20px 5vw;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .follow-btn {
+        right: 10vw;
+    }
+
+    .profile-overview {
+        padding-left: 100px;
+        transform: scale(1.2, 1.2);
+        width: fit-content;
+    }
+
+    .sk-popularity {
+        margin-left: 20%;
+    }
+
+    .metadata {
+        justify-content: center;
+        transform: scale(1.2, 1.2);
+        /* width: fit-content; */
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .metadata .met {
+        margin-right: 50px;
+    }
+
+    .tabs {
+        grid-template-columns: repeat(6, 1fr);
+        margin-top: 40px;
+    }
+
+    .tabs .tab {
+        font-size: 15px;
+    }
+
+    .sk-attrs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sk-education .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .bottom-content {
+        padding: 10vh 10vw;
+        display: flex;
+    }
+
+    .footer {
+        padding: 10px 10vw;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .right-header {
-        margin-left: 80px;
-    }
-
-    .profile-overview {
-        grid-template-columns: 1fr 1fr;
+        margin-left: 40px;
     }
 }
 
@@ -627,6 +720,19 @@ body {
 
     .sk-post-job-btn {
         margin-left: 120px;
+    }
+
+    .profile-overview {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .news-letter {
+        grid-column-start: 4;
+        grid-column-end: 6;
     }
 }
 
