@@ -517,6 +517,39 @@ body {
     padding: 15px 0px;
 }
 
+.footer {
+    padding: 10px;
+}
+
+.footer div:first-child {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f7f9fc;
+}
+
+.footer .skill-logo {
+    width: 100px;
+}
+
+.footer .social-icons {
+    margin-top: 15px;
+}
+
+.footer .social-icons img {
+    height: 18px;
+    margin-right: 10px;
+}
+
+.footer .social-icons img:last-child {
+    margin-right: 0px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
 
