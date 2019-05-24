@@ -1,3 +1,10 @@
+/* Debug CSS statements */
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    border: solid 1px #f00;
+} */
+
 body {
     font-family: Roboto;
     /* min-width: 400px; */
@@ -116,7 +123,7 @@ body {
 }
 
 .nav-button a {
-    margin-left: 20px;
+    margin-left: 5vw;
 }
 
 .main-header .bottom {
@@ -290,7 +297,11 @@ body {
     display: flex;
     font-size: 12px;
     margin-top: 10px;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.metadata .met {
+    margin-right: 5vw;
 }
 
 .metadata div {
@@ -518,7 +529,7 @@ body {
 
 .sk-choice .or {
     margin: 0px 20px;
-    font-size: 10px;
+    font-size: 15px;
     padding: 15px 0px;
 }
 
@@ -532,6 +543,7 @@ body {
     justify-content: space-between;
     border-bottom: 2px solid #f7f9fc;
     padding-bottom: 20px;
+    margin-top: 5vh;
 }
 
 .footer .skill-logo {
@@ -556,7 +568,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 20px;
-    margin-top: 20px;
+    margin-top: 10vh;
 }
 
 .footer-col {
@@ -602,7 +614,17 @@ body {
     margin-left: 5px;
 }
 
-/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 320px) {
+    .sk-choice {
+        padding: 0px;
+    }
+
+    .bottom-content .blue-btn {
+        transform: scale(0.9, 0.9);
+    }
+}
+
+/* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
     .hide {
         display: none !important;
@@ -610,26 +632,13 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-    .main-header .top {
-        flex-direction: row;
-    }
-
     .sk-menu-item {
         font-size: 15px;
         margin-right: 20px;
     }
 
-    .left-header {
-        margin-left: 20px;
-    }
-
     .main-header .skill-logo {
         width: 260px;
-    }
-
-    .sk-post-job-btn {
-        top: 100px;
-        right: 45px;
     }
 
     .profile {
@@ -661,13 +670,9 @@ body {
     .metadata {
         justify-content: center;
         transform: scale(1.2, 1.2);
-        /* width: fit-content; */
+        width: fit-content;
         margin-top: 30px;
         margin-left: 30%;
-    }
-
-    .metadata .met {
-        margin-right: 50px;
     }
 
     .tabs {
@@ -695,10 +700,24 @@ body {
     .bottom-content {
         padding: 10vh 10vw;
         display: flex;
+        justify-content: space-between;
     }
 
     .footer {
         padding: 10px 10vw;
+    }
+
+    .footer .skill-logo {
+        width: 200px;
+    }
+
+    .footer .social-icons img {
+        height: 22px;
+        margin-right: 20px;
+    }
+
+    .footer .social-icons img:last-child {
+        margin-right: 0px;
     }
 
     .footer-grid {
@@ -709,6 +728,14 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .main-header .top {
+        flex-direction: row;
+    }
+
+    .left-header {
+        margin-left: 20px;
+    }
+
     .nav-button {
         display: none;
     }
@@ -721,6 +748,20 @@ body {
     .right-header {
         margin-left: 40px;
     }
+
+    .sk-post-job-btn {
+        top: 100px;
+        right: 45px;
+    }
+
+    .sk-dream {
+        font-size: 15px;
+    }
+
+    .sk-dream div:first-child {
+        font-size: 20px;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -762,10 +803,56 @@ body {
     }
 
     .right-header {
-        margin-left: 214px;
+        margin-left: 150px;
     }
 
     .sk-post-job-btn {
         margin-left: 320px;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-overview {
+        padding-top: 25px;
+        padding-left: 200px;
+        transform: scale(1.5, 1.5);
+    }
+
+    .sk-popularity {
+        margin-left: 10%;
+    }
+
+    .metadata {
+        margin-top: 60px;
+        transform: scale(1.5, 1.5);
+        margin-left: 50%;
+    }
+
+    .tabs .tab {
+        font-size: 20px;
+    }
+
+    .body .title {
+        font-size: 30px;
+    }
+
+    .sk-attr {
+        font-size: 15px;
+    }
+
+    .footer-col {
+        font-size: 17px;
+    }
+
+    .footer-col .title {
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+
+    .footer-col div {
+        margin-bottom: 25px;
     }
 }
