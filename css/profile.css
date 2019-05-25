@@ -829,6 +829,12 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .lowest-footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "copyright copyright copyright"
+            "buttons buttons buttons" "space space btt";
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -894,6 +900,11 @@ body {
     .news-letter {
         grid-column-start: 4;
         grid-column-end: 6;
+    }
+
+    .lowest-footer {
+        grid-template-columns: 1fr 1fr 20%;
+        grid-template-areas: "copyright buttons btt";
     }
 }
 
