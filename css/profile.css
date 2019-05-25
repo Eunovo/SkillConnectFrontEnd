@@ -133,8 +133,20 @@ body {
     height: 20px;
 }
 
-.nav-button a {
+.nav-button button {
     margin-left: 5vw;
+    border: none;
+    background-color: white;
+    color: #236df8;
+    padding: 10px;
+}
+
+.nav-button :focus {
+    outline-color: #236df8;
+}
+
+.nav-button i {
+    transform: scale(1.5, 1.5);
 }
 
 .main-header .bottom {
