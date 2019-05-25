@@ -415,6 +415,15 @@ body {
     font-size: 12pt;
 }
 
+.social-contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-contact img {
+    height: 18px;
+}
+
 .sk-attrs {
     display: grid;
     grid-template-columns: 1fr;
@@ -842,6 +851,10 @@ body {
 
     .body .descr p {
         font-size: 15px;
+    }
+
+    .social-contact img {
+        height: 22px;
     }
 
     .sk-attrs {
