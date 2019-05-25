@@ -354,6 +354,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
+    grid-column-gap: 10px;
 }
 
 .body .descr .title {
@@ -363,6 +364,48 @@ body {
 .body .descr p {
     font-size: 13px;
     color: #363636;
+}
+
+.body .descr .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info {
+    margin-left: 15%;
+    margin-right: 15%;
+    min-height: 550px;
+}
+
+.info-content {
+    padding: 10%;
+    color: #212529;
+    font-weight: bold;
+    border: solid 2px #edeff2;
+    background-image: linear-gradient(to left, #fefeff, #f7f9fc);
+}
+
+.info-title {
+    font-size: 18px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edeff2;
+}
+
+.info-details {
+    padding-top: 5%;
+    font-size: 15;
+}
+
+.info-details div {
+    display: flex;
+    justify-content: start;
+    margin: 5px 0px;
+}
+
+.info-details div div:last-child {
+    color: #6f7484;
+    margin-left: 20px;
 }
 
 .sk-attrs {
@@ -833,7 +876,7 @@ body {
     .lowest-footer {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "copyright copyright copyright"
-            "buttons buttons buttons" "space space btt";
+            "buttons buttons buttons""space space btt";
     }
 
 }
@@ -892,6 +935,14 @@ body {
 
     .profile-overview {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .body .descr {
+        grid-template-columns: 60% 1fr;
+    }
+
+    .info {
+        margin: 0px;
     }
 
     .footer-grid {
