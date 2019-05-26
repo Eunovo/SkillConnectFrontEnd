@@ -393,6 +393,7 @@ body {
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
+    margin-bottom: 20px;
 }
 
 .body .descr .title {
