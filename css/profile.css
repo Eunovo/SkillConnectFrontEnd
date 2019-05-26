@@ -903,6 +903,10 @@ body {
         width: 260px;
     }
 
+    .cover-image {
+        height: 300px;
+    }
+
     .profile {
         width: 80vw;
         margin-left: auto;
@@ -913,10 +917,12 @@ body {
     .profile-image {
         width: 150px;
         height: 150px;
+        top: 250px;
     }
 
     .follow-btn {
         right: 10vw;
+        top: 250px;
     }
 
     .profile-overview {
