@@ -470,6 +470,17 @@ body {
     font-size: 12pt;
 }
 
+.share-profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.share-profile-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #236df8;
+}
+
 .social-contact {
     display: flex;
     justify-content: space-evenly;
