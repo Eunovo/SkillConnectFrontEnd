@@ -846,6 +846,15 @@ body {
 }
 
 @media only screen and (max-width: 320px) {
+    .sk-menu-item {
+        margin-right: 5px;
+        font-size: 11px;
+    }
+
+    .sk-menu-item img {
+        transform: scale(0.9, 0.9);
+    }
+
     .sk-choice {
         padding: 0px;
     }
