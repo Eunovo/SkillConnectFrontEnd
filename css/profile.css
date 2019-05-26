@@ -876,8 +876,8 @@ body {
     }
 }
 
-/* Small devices (phones, 768px and down) */
-@media only screen and (max-width: 768px) {
+/* Small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
     .hide {
         display: none !important;
     }
@@ -1024,7 +1024,6 @@ body {
 
     .main-header .bottom {
         display: flex;
-        padding-left: 40px;
     }
 
     .right-header {
@@ -1033,7 +1032,7 @@ body {
 
     .sk-post-job-btn {
         top: 100px;
-        right: 45px;
+        right: 5px;
     }
 
     .metadata {
@@ -1056,12 +1055,16 @@ body {
         display: block;
     }
 
+    .main-header .bottom {
+        padding-left: 40px;
+    }
+
     .sk-nav {
         margin-right: 40px;
     }
 
     .sk-post-job-btn {
-        margin-left: 120px;
+        right: 45px;
     }
 
     .profile-image::after {
