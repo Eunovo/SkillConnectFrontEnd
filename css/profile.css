@@ -199,20 +199,25 @@ body {
 }
 
 .follow-btn {
-    padding: 10px 32px;
+    padding: 10px 45px 10px 32px;
     border-radius: 50px;
     border: solid 1px #11578b;
     background-color: #179cff;
     font-family: Quicksand;
     font-size: 10pt;
     font-weight: bold;
-    line-height: 1.2;
     color: #ffffff;
     position: absolute;
     top: 150px;
     right: 10px;
     text-align: center;
-    padding-top: 10px
+}
+
+.follow-btn img {
+    width: 20px;
+    position: absolute;
+    top: 8px;
+    right: 15px;
 }
 
 .profile {
