@@ -248,11 +248,11 @@ body {
     content: '';
     background-color: #11a52d;
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
     border-radius: 100%;
-    right: 8%;
-    top: 75%;
+    right: 12%;
+    top: 72%;
 }
 
 .profile-overview {
@@ -1019,9 +1019,9 @@ body {
         right: 45px;
     }
 
-.metadata {
-    margin-left: 20%;
-}
+    .metadata {
+        margin-left: 20%;
+    }
 
     .sk-dream {
         font-size: 15px;
@@ -1047,13 +1047,20 @@ body {
         margin-left: 120px;
     }
 
+    .profile-image::after {
+        top: 75%;
+        right: 8%;
+        width: 25px;
+        height: 25px;
+    }
+
     .profile-overview {
         grid-template-columns: 1fr 1fr;
     }
 
-.metadata {
-    margin-left: 30%;
-}
+    .metadata {
+        margin-left: 30%;
+    }
 
     .body .descr {
         grid-template-columns: 60% 1fr;
