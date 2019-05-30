@@ -1,0 +1,106 @@
+.portfolio {
+
+}
+
+#portfolio .title {
+    margin-top: 25px;
+}
+
+.portfolio-text {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #363636;
+    max-width: 400px;
+}
+
+.port-pic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 15px;
+    
+}
+
+.port-pic-grid div {
+    height: 70px;
+}
+
+.port-pic-grid img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#firstPortPic {
+    grid-column: 1 / 3;
+    grid-row: 1  / 3;
+    height: 140px;
+}
+
+.port-pic-grid div:last-child {
+    position: relative;
+}
+
+.see-more-cover:hover::after {
+    content: "See more";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9,18,82, 0.5);
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#instagramSection {
+    margin-top: 25px;
+    margin-bottom: 15vh;
+}
+
+#instagramSection .title {
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 600px) {
+    .portfolio-text {
+        font-size: 15px;
+    }
+
+    .port-pic-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        margin-top: 25px;
+    }
+
+    .port-pic-grid div {
+        height: 100px;
+    }
+
+    #firstPortPic {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .port-pic-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 150px));
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+
+    .port-pic-grid div {
+        height: 150px;
+    }
+
+    #firstPortPic {
+        height: 300px;
+    }
+}
