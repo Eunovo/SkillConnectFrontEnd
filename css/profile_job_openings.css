@@ -57,6 +57,23 @@
     border: 1px solid black;
 }
 
+.pagination {
+    width: fit-content;
+    margin: auto;
+    list-style: none;
+    display: flex;
+}
+
+.pagination li {
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+.pagination .active {
+    color: white;
+    background-color: blue;
+}
+
 @media only screen and (min-width: 450px) {
     .job-main {
         width: 60%;
