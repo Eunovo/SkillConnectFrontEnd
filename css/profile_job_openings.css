@@ -14,16 +14,21 @@
     border-radius: 20px;
     border: solid 2px #f2f2f2;
     width: 100%;
+    padding: 10px;
+}
+
+.job-main {
+    width: 100%;
+    padding: 10px;
 }
 
 .job-top {
     display: flex;
-    justify-content: space-between;
-    font-size: 12px;
+    /* justify-content: space-between; */
 }
 
 .job-logo {
-    width: 70px;
+    width: 50px;
 }
 
 .job-logo img {
@@ -32,9 +37,55 @@
     object-fit: contain;
 }
 
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+}
+
 .job-bottom {
     width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+
+.apply-now-btn button {
+    font-size: 12px;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+@media only screen and (min-width: 450px) {
+    .job-main {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .job {
+        flex-direction: row;
+        font-size: 14px;
+        justify-content: space-between;
+    }
+
+    .job-logo {
+        width: 70px;
+    }
+
+    .job-main {
+        width: 100%;
+    }
+
+    .job-info {
+        font-size: 11px;
+    }
+
+    .job-bottom {
+        margin: 0px;
+        width: 40%;
+    }
+
+
 }
