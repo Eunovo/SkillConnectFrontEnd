@@ -127,6 +127,34 @@
 
 #messageSection {
     grid-area: message-section;
+    width: 90%;
+    margin: auto;
+}
+
+.sk-message-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 350px;
+}
+
+.sk-message-form {
+    border-radius: 20px;
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.sk-message-form-input {
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+    font-size: 12px;
+}
+
+.sk-message-form textarea {
+    min-height: 150px;
 }
 
 @media only screen and (min-width: 450px) {
@@ -168,7 +196,7 @@
     #jobOpenings {
         display: grid;
         grid-template-columns: 70% 1fr;
-        grid-template-areas: "job-list message-section" "pagination pagination";
+        grid-template-areas: "job-list message-section""pagination pagination";
         grid-column-gap: 10px;
     }
 
