@@ -87,12 +87,32 @@
 
 .pagination li {
     padding: 5px 10px;
-    border: 1px solid black;
+    color: #6f7484;
+    font-weight: 500;
+    border-radius: 5px;
 }
 
 .pagination .active {
     color: white;
-    background-color: blue;
+    background-color: #236df8;
+}
+
+.pagination button {
+    border-radius: 5px;
+    border: solid 1.5px #e5e7ea;
+    background-color: #f9fbfe;
+}
+
+.pagination button img {
+    width: 12px;
+}
+
+.pagination .prev-btn {
+    margin-right: 10px;
+}
+
+.pagination next-btn {
+    margin-left: 10px;
 }
 
 @media only screen and (min-width: 450px) {
