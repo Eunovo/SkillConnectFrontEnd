@@ -54,6 +54,11 @@
 
 .job-location {
     color: #1c1919;
+    margin-left: 10px;
+}
+
+.job-location img {
+    width: 9px;
 }
 
 .job-bottom {
