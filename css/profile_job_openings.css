@@ -1,4 +1,5 @@
 .job-list {
+    grid-area: job-list;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -83,6 +84,10 @@
     font-family: Montserrat, sans-serif;
 }
 
+.pagination-container {
+    grid-area: pagination
+}
+
 .pagination {
     width: fit-content;
     margin: auto;
@@ -120,6 +125,10 @@
     margin-left: 10px;
 }
 
+#messageSection {
+    grid-area: message-section;
+}
+
 @media only screen and (min-width: 450px) {
     .job {
         padding: 10px 5%;
@@ -152,5 +161,18 @@
     .job-bottom {
         margin: 0px;
         width: 30%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #jobOpenings {
+        display: grid;
+        grid-template-columns: 70% 1fr;
+        grid-template-areas: "job-list message-section" "pagination pagination";
+        grid-column-gap: 10px;
+    }
+
+    .apply-now-btn button {
+        padding: 7px 10px;
     }
 }
