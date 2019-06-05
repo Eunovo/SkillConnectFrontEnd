@@ -7,19 +7,20 @@
 
 .job {
     font-size: 12px;
+    font-family: Quicksand;
     height: 120px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     border-radius: 20px;
     border: solid 2px #f2f2f2;
-    width: 100%;
     padding: 10px;
+    margin-bottom: 20px;
+    height: 100px;
 }
 
 .job-main {
     width: 100%;
-    padding: 10px;
 }
 
 .job-top {
@@ -37,10 +38,22 @@
     object-fit: contain;
 }
 
+.job-title {
+    font-weight: bold;
+}
+
 .job-info {
     display: flex;
     justify-content: space-between;
     font-size: 9px;
+}
+
+.job-company {
+    color: #2e78bc;
+}
+
+.job-location {
+    color: #1c1919;
 }
 
 .job-bottom {
@@ -50,11 +63,19 @@
     justify-content: space-between;
 }
 
+.job-type {
+    font-weight: 600;
+    font-size: 11px;
+}
+
 .apply-now-btn button {
-    font-size: 12px;
-    padding: 10px 15px;
+    font-size: 11px;
+    padding: 10px 14px;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #e94367;
+    border-radius: 10px;
+    color: #e94367;
+    font-family: Montserrat, sans-serif;
 }
 
 .pagination {
@@ -75,8 +96,12 @@
 }
 
 @media only screen and (min-width: 450px) {
-    .job-main {
-        width: 60%;
+    .job {
+        padding: 10px 5%;
+    }
+
+    .job-top {
+        width: 65%;
     }
 }
 
@@ -101,8 +126,6 @@
 
     .job-bottom {
         margin: 0px;
-        width: 40%;
+        width: 30%;
     }
-
-
 }
