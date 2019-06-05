@@ -129,20 +129,30 @@
     grid-area: message-section;
     width: 90%;
     margin: auto;
+    margin-top: 40px;
+    max-width: 450px;
 }
 
 .sk-message-form form {
+    background-color: #f4f4f4;
+    height: 100%;
+    border-radius: 20px;
+    margin: 0px;
+}
+
+.sk-message-form .form-top-area {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height: 350px;
+    min-height: 80%;
+    background-color: #ffffff;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .sk-message-form {
     border-radius: 20px;
     border: solid 1px #e6e6e6;
     background-color: #ffffff;
-    padding: 20px;
 }
 
 .sk-message-form-input {
@@ -151,11 +161,41 @@
     border: solid 1px #e6e6e6;
     background-color: #ffffff;
     font-size: 12px;
+    margin: 0px 20px;
 }
 
 .sk-message-form textarea {
     min-height: 150px;
 }
+
+.sk-message-form .form-bottom-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.sk-send-msg-btn {
+    border-radius: 32px;
+    background-color: #ec6533;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 70%;
+    margin: 20px 15%;
+    font-size: 12px;
+}
+
+.sk-accept-text {
+    font-size: 11px;
+    width: fit-content;
+    margin: auto;
+}
+
+.sk-accept-text span {
+    font-weight: bold;
+}
+
 
 @media only screen and (min-width: 450px) {
     .job {
@@ -202,5 +242,13 @@
 
     .apply-now-btn button {
         padding: 7px 10px;
+    }
+
+    .sk-message-form .form-top-area {
+        min-height: 350px;
+    }
+
+    .sk-message-form .form-bottom-area {
+        min-height: 120px;
     }
 }
